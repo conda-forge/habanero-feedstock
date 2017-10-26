@@ -1,6 +1,6 @@
 {% set name = "habanero" %}
-{% set version = "0.5.0" %}
-{% set sha256 = "5c308a5ac6e25db31555354607825737f2b4b056831240bda4065a4950b22f63" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "cd83f633c2fc0bfc3d20dd3c5852c84056230d119eb3aba9b94b03e423875788" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   noarch: python
 
