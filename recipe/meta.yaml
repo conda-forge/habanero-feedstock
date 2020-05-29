@@ -1,6 +1,6 @@
 {% set name = "habanero" %}
-{% set version = "0.7.2" %}
-{% set sha256 = "d53bc8ccbe6d2c75d603da756666f9773c7f30b9d0751dc63c8038cd93dbebec" %}
+{% set version = "0.7.4" %}
+{% set sha256 = "780ed450438ce671f3d6a6e4539ffcc5a11bfe08ee6d10634a0f4ab047fee0e7" %}
 
 package:
   name: {{ name|lower }}
@@ -13,18 +13,18 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-  - python
-  - setuptools
-  - pip
+    - python
+    - setuptools
+    - pip
   run:
-  - python
-  - requests >=2.7.0
-  - tqdm
+    - python
+    - requests >=2.7.0
+    - tqdm
 
 test:
   imports:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'CrossRef Search Low-level client for Python'
+  summary: CrossRef Search Low-level client for Python
 
   description: |
     This is a low level client for working with Crossref's search API.
