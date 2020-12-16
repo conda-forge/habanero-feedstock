@@ -5,9 +5,13 @@ Home: https://github.com/sckott/habanero
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/habanero-feedstock/blob/master/LICENSE.txt)
 
 Summary: CrossRef Search Low-level client for Python
+
+Development: https://github.com/sckott/habanero
+
+Documentation: http://habanero.readthedocs.io/
 
 This is a low level client for working with Crossref's search API.
 It's been named to be more generic, as other organizations are/will
@@ -121,7 +125,4 @@ Feedstock Maintainers
 =====================
 
 * [@bryanwweber](https://github.com/bryanwweber/)
-
-
-<!-- dummy commit to enable rerendering -->
 
