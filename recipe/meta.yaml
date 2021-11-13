@@ -1,6 +1,6 @@
 {% set name = "habanero" %}
-{% set version = "0.7.4" %}
-{% set sha256 = "780ed450438ce671f3d6a6e4539ffcc5a11bfe08ee6d10634a0f4ab047fee0e7" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "bb1b6d070870c125d7abd81fbc5368c34d40b9fa1ef3a6f51547064e8f10fea9" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
