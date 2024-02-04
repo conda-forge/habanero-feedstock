@@ -1,14 +1,14 @@
 {% set name = "habanero" %}
 {% set version = "1.2.6" %}
-{% set sha256 = "6250a894c2d9849a8c8f764be424256d2d8ca2d0ef0e5b6e717d89c83ecc338d" %}
+{% set sha256 = "b206d49f44f41c2289f0ad731f259a50d4376c747d8ecbb219a73874d45309d4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: v{{ version }}.tar.gz
-  url: https://github.com/sckott/{{ name }}/archive/v{{ version }}.tar.gz
+  fn: {{name}}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
