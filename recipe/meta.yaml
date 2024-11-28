@@ -39,7 +39,7 @@ about:
   home: https://github.com/sckott/habanero
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.md
   summary: CrossRef Search Low-level client for Python
 
   description: |
