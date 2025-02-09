@@ -28,6 +28,7 @@ requirements:
     - pyyaml >=6.0.2
     - tqdm >=4.66.5
     - urllib3 ==2.2.0
+    - bibtexparser >=2.0.0b7
 
 test:
   requires:
