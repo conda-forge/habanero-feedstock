@@ -1,6 +1,6 @@
 {% set name = "habanero" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "346561bdac9c985b0b2b1309559eec826a03fc77382030a1e9ddd861e5684e5f" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "18c5c3b59b8db1887811da6de8bd976ac4077d61a25a058f3a67044e8bcab8eb" %}
 
 package:
   name: {{ name|lower }}
@@ -28,6 +28,8 @@ requirements:
     - pyyaml >=6.0.2
     - tqdm >=4.66.5
     - urllib3 ==2.2.0
+    # This package isn't available on cf yet because it's still beta
+    # - bibtexparser >=2.0.0b7
 
 test:
   requires:
