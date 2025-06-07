@@ -1,6 +1,6 @@
 {% set name = "habanero" %}
-{% set version = "2.2.0" %}
-{% set sha256 = "18c5c3b59b8db1887811da6de8bd976ac4077d61a25a058f3a67044e8bcab8eb" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "871e5d088ef641b05514d44b004af512852b309bcd0d81f10545e58d54a654ab" %}
 
 package:
   name: {{ name|lower }}
