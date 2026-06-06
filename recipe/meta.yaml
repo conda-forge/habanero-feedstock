@@ -1,6 +1,6 @@
 {% set name = "habanero" %}
-{% set version = "2.3.0" %}
-{% set sha256 = "871e5d088ef641b05514d44b004af512852b309bcd0d81f10545e58d54a654ab" %}
+{% set version = "2.4.0" %}
+{% set sha256 = "7690ca5a261037632e5d7751ce3c47234112079ab80e9de4be626c684034e1f8" %}
 
 package:
   name: {{ name|lower }}
@@ -23,11 +23,10 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - httpx >=0.27.2
-    - packaging >=24.1
-    - pyyaml >=6.0.2
-    - tqdm >=4.66.5
-    - urllib3 >=2.2.2,<3.0.0
+    - httpx >=0.28.1
+    - packaging >=26.2
+    - tqdm >=4.67.3
+    - urllib3 >=2.7.0,<3.0.0
     # This package isn't available on cf yet because it's still beta
     # - bibtexparser >=2.0.0b7
 
