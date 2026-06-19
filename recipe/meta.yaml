@@ -23,7 +23,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - httpx >=0.28.1
+    - httpx2 >=2.4.0
     - packaging >=26.2
     - tqdm >=4.67.3
     - urllib3 >=2.7.0,<3.0.0
